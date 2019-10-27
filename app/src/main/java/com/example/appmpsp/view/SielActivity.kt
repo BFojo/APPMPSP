@@ -6,17 +6,17 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.appmpsp.R
-import com.example.appmpsp.Services.JucespService
-import com.example.appmpsp.adapter.JucespAdapter
-import com.example.appmpsp.model.JucespResult
-import com.example.appmpsp.presenter.JucespPresenter
-import kotlinx.android.synthetic.main.jucesp_recycler.*
+import com.example.appmpsp.Services.SielService
+import com.example.appmpsp.adapter.SielAdapter
+import com.example.appmpsp.model.SielResult
+import com.example.appmpsp.presenter.SielPresenter
+import kotlinx.android.synthetic.main.siel_recycler.*
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class JucespActivity : AppCompatActivity(), JucespView {
+class SielActivity: AppCompatActivity() , SielView {
 
-    val jucespAdapter = JucespAdapter()
+    val sielAdapter = SielAdapter()
 
     val presenter by lazy {
         val retrofit = Retrofit.Builder()
@@ -24,32 +24,31 @@ class JucespActivity : AppCompatActivity(), JucespView {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-        val service = retrofit.create(JucespService::class.java)
+        val service = retrofit.create(SielService::class.java)
 
-        JucespPresenter(this, service)
+        SielPresenter(this, service)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.jucesp_recycler)
-        jucesp_recycler.layoutManager = LinearLayoutManager(this)
-        jucesp_recycler.adapter = jucespAdapter
+        setContentView(R.layout.siel_recycler)
+        siel_recycler.layoutManager = LinearLayoutManager(this)
+        siel_recycler.adapter = sielAdapter
 
-        presenter.showJucesp()
+        presenter.showSiel()
     }
 
-
-    override fun showJucesp(jucesp: List<JucespResult>) {
-        jucespAdapter.updateItems(jucesp)
+    override fun showSiel(siel: List<SielResult>) {
+        sielAdapter.updateItems(siel)
     }
 
     override fun showLoading() {
-        progressBarJucesp.visibility = View.VISIBLE
-        jucesp_recycler.visibility = View.INVISIBLE
+        progressBarSiel.visibility = View.VISIBLE
+        siel_recycler.visibility = View.INVISIBLE
     }
 
     override fun hideLoading() {
-        progressBarJucesp.visibility = View.INVISIBLE
-        jucesp_recycler.visibility = View.VISIBLE
+        progressBarSiel.visibility = View.INVISIBLE
+        siel_recycler.visibility = View.VISIBLE
     }
 
     override fun showError(error: Throwable) {

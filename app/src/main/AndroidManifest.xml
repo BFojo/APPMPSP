@@ -20,7 +20,14 @@
         <activity android:name=".view.ArpenspActivity" />
         <activity android:name=".view.JucespView" />
         <activity android:name=".view.JucespActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.SielActivity" />
+        <activity android:name=".view.SielView" />
+        <activity android:name=".view.InfocrimActivity" />
+        <activity android:name=".view.InfocrimView" />
+        <activity android:name=".view.SivecActivity" />
+        <activity android:name=".view.SivecView" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

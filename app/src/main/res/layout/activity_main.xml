@@ -86,20 +86,32 @@
         android:id="@+id/sielButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="2dp"
         android:text="SIEL"
+        app:layout_constraintEnd_toStartOf="@+id/infocrimButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cadespButton" />
+        app:layout_constraintTop_toBottomOf="@+id/arpenspButton" />
+
+    <Button
+    android:id="@+id/infocrimButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="60dp"
+    android:text="INFOCRIM"
+    app:layout_constraintStart_toEndOf="@+id/sielButton"
+    app:layout_constraintTop_toBottomOf="@+id/cadespButton" />
 
     <Button
         android:id="@+id/sivecButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="75dp"
         android:text="SIVEC"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/infocrimButton"
         app:layout_constraintTop_toBottomOf="@+id/jucespButton" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

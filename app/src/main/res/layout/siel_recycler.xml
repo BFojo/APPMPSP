@@ -7,23 +7,23 @@
     android:layout_height="match_parent">
 
     <ProgressBar
-        android:id="@+id/progressBarJucesp"
+        android:id="@+id/progressBarSiel"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/jucesp_recycler"
+        app:layout_constraintBottom_toBottomOf="@+id/siel_recycler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/jucesp_recycler" />
+        app:layout_constraintTop_toTopOf="@+id/siel_recycler" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/jucesp_recycler"
+        android:id="@+id/siel_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:listitem="@layout/jucesp_item" />
+        tools:layout_editor_absoluteX="-45dp"
+        tools:layout_editor_absoluteY="50dp"
+        tools:listitem="@layout/siel_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

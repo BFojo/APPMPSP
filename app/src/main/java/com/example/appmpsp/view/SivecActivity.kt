@@ -6,17 +6,17 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.appmpsp.R
-import com.example.appmpsp.Services.JucespService
-import com.example.appmpsp.adapter.JucespAdapter
-import com.example.appmpsp.model.JucespResult
-import com.example.appmpsp.presenter.JucespPresenter
-import kotlinx.android.synthetic.main.jucesp_recycler.*
+import com.example.appmpsp.Services.SivecService
+import com.example.appmpsp.adapter.SivecAdapter
+import com.example.appmpsp.model.SivecResult
+import com.example.appmpsp.presenter.SivecPresenter
+import kotlinx.android.synthetic.main.sivec_recycler.*
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class JucespActivity : AppCompatActivity(), JucespView {
+class SivecActivity : AppCompatActivity(), SivecView {
 
-    val jucespAdapter = JucespAdapter()
+    val sivecAdapter = SivecAdapter()
 
     val presenter by lazy {
         val retrofit = Retrofit.Builder()
@@ -24,32 +24,32 @@ class JucespActivity : AppCompatActivity(), JucespView {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-        val service = retrofit.create(JucespService::class.java)
+        val service = retrofit.create(SivecService::class.java)
 
-        JucespPresenter(this, service)
+        SivecPresenter(this, service)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.jucesp_recycler)
-        jucesp_recycler.layoutManager = LinearLayoutManager(this)
-        jucesp_recycler.adapter = jucespAdapter
+        setContentView(R.layout.sivec_recycler)
+        sivec_recycler.layoutManager = LinearLayoutManager(this)
+        sivec_recycler.adapter = sivecAdapter
 
-        presenter.showJucesp()
+        presenter.showSivec()
     }
 
 
-    override fun showJucesp(jucesp: List<JucespResult>) {
-        jucespAdapter.updateItems(jucesp)
+    override fun showSivec(sivec: List<SivecResult>) {
+        sivecAdapter.updateItems(sivec)
     }
 
     override fun showLoading() {
-        progressBarJucesp.visibility = View.VISIBLE
-        jucesp_recycler.visibility = View.INVISIBLE
+        progressBarSivec.visibility = View.VISIBLE
+        sivec_recycler.visibility = View.INVISIBLE
     }
 
     override fun hideLoading() {
-        progressBarJucesp.visibility = View.INVISIBLE
-        jucesp_recycler.visibility = View.VISIBLE
+        progressBarSivec.visibility = View.INVISIBLE
+        sivec_recycler.visibility = View.VISIBLE
     }
 
     override fun showError(error: Throwable) {

@@ -26,17 +26,17 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/nireMatriz"
+                android:id="@+id/numeroProcesso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Nire Matriz: "
+                android:text="Numero Processo: "
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/nireMatrizMItem"
+                android:id="@+id/numeroProcessoItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -52,21 +52,21 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nireMatriz" />
+                app:layout_constraintTop_toBottomOf="@+id/numeroProcesso" />
 
             <TextView
-                android:id="@+id/tipoEmpresa"
+                android:id="@+id/nomeS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Tipo Empresa:"
+                android:text="Nome:"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider" />
 
 
             <TextView
-                android:id="@+id/tipoEmpresaItem"
+                android:id="@+id/nomeSItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -84,20 +84,20 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tipoEmpresa" />
+                app:layout_constraintTop_toBottomOf="@+id/nomeS" />
 
             <TextView
-                android:id="@+id/dataConstituicao"
+                android:id="@+id/titulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Data Constituicao:"
+                android:text="Titulo:"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
             <TextView
-                android:id="@+id/dataConstituicaoItem"
+                android:id="@+id/tituloItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -114,22 +114,22 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dataConstituicao" />
+                app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
 
             <TextView
-                android:id="@+id/inicioAtividade"
+                android:id="@+id/dataNasc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Inicio Atividade:"
+                android:text="Data Nasc:"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
 
             <TextView
-                android:id="@+id/inicioAtividadeItem"
+                android:id="@+id/dataNascItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -145,20 +145,20 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/inicioAtividade" />
+                app:layout_constraintTop_toBottomOf="@+id/dataNasc" />
 
             <TextView
-                android:id="@+id/cnpjJ"
+                android:id="@+id/zona"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="CNPJ:"
+                android:text="Zona:"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider4" />
 
             <TextView
-                android:id="@+id/cnpjItemJ"
+                android:id="@+id/zonaItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -174,21 +174,21 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cnpjJ" />
+                app:layout_constraintTop_toBottomOf="@+id/zona" />
 
 
             <TextView
-                android:id="@+id/inscricaoEstadual"
+                android:id="@+id/municipioS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Inscricao Estadual:"
+                android:text="Municipio:"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider5" />
 
             <TextView
-                android:id="@+id/inscricaoEstadualItem"
+                android:id="@+id/municipioSItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -205,30 +205,27 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/inscricaoEstadual" />
+                app:layout_constraintTop_toBottomOf="@+id/municipioS" />
 
             <TextView
-                android:id="@+id/objeto"
+                android:id="@+id/ufS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Objeto: "
+                android:text="UF: "
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider6" />
 
 
             <TextView
-                android:id="@+id/objetoItem"
+                android:id="@+id/ufSItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="10dp"
-                app:layout_constraintStart_toEndOf="@+id/logradouro"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/objeto" />
-
-
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider6" />
             <View
                 android:id="@+id/divider7"
                 android:layout_width="0dp"
@@ -236,30 +233,28 @@
                 android:layout_marginTop="5dp"
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/objetoItem" />
+                app:layout_constraintTop_toBottomOf="@+id/ufS" />
 
             <TextView
-                android:id="@+id/logradouro"
+                android:id="@+id/dataDomicilio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Logradouro:"
+                android:text="Data Domicilio: "
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider7" />
 
+
             <TextView
-                android:id="@+id/logradouroItem"
+                android:id="@+id/dataDomicilioItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="24dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider7" />
-
-
             <View
                 android:id="@+id/divider8"
                 android:layout_width="0dp"
@@ -268,28 +263,27 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/logradouro" />
-
+                app:layout_constraintTop_toBottomOf="@+id/dataDomicilio" />
 
             <TextView
-                android:id="@+id/numero"
+                android:id="@+id/nomePaiS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Numero:"
+                android:text="Nome Pai "
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider8" />
 
+
             <TextView
-                android:id="@+id/numeroItem"
+                android:id="@+id/nomePaiSItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="24dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider8" />
-
 
             <View
                 android:id="@+id/divider9"
@@ -299,20 +293,21 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/numero" />
+                app:layout_constraintTop_toBottomOf="@+id/nomePaiSiv" />
 
             <TextView
-                android:id="@+id/bairro"
+                android:id="@+id/nomeMaeS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Bairro:"
+                android:text="Nome Mae"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider9" />
 
+
             <TextView
-                android:id="@+id/bairroItem"
+                android:id="@+id/nomeMaeSItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -328,20 +323,21 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bairro" />
+                app:layout_constraintTop_toBottomOf="@+id/nomeMaeSiv" />
 
             <TextView
-                android:id="@+id/complemento"
+                android:id="@+id/naturalidade"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Ocorrencia Fiscal:"
+                android:text="Naturalidade"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider10" />
 
+
             <TextView
-                android:id="@+id/complementoItem"
+                android:id="@+id/naturalidadeItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -357,117 +353,27 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/complemento" />
+                app:layout_constraintTop_toBottomOf="@+id/naturalidade" />
 
             <TextView
-                android:id="@+id/municipio"
+                android:id="@+id/codValidacao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Municipio:"
+                android:text="Cod Validacao"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider11" />
 
+
             <TextView
-                android:id="@+id/municipioItem"
+                android:id="@+id/codValidacaoItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="24dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider11" />
-
-            <View
-                android:id="@+id/divider12"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
-                android:background="?android:attr/listDivider"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/municipio" />
-
-
-            <TextView
-                android:id="@+id/cep"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="5dp"
-                android:text="CEP:"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divider12" />
-
-
-            <TextView
-                android:id="@+id/cepItem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="24dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divider12" />
-
-            <View
-                android:id="@+id/divider13"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
-                android:background="?android:attr/listDivider"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cep" />
-
-
-            <TextView
-                android:id="@+id/uf"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="5dp"
-                android:text="UF:"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divider13" />
-
-            <TextView
-                android:id="@+id/ufItem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="24dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divider13" />
-
-            <View
-                android:id="@+id/divider14"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
-                android:background="?android:attr/listDivider"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/uf" />
-
-
-            <TextView
-                android:id="@+id/capital"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="5dp"
-                android:text="Capital:"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divider14" />
-
-            <TextView
-                android:id="@+id/capitalItem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divider14" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

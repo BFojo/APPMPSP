@@ -43,5 +43,22 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, JucespActivity :: class.java)
             startActivity(intent)
         }
+        val sielButton:Button = findViewById(R.id.sielButton)
+        sielButton.setOnClickListener{
+            val intent = Intent(this, SielActivity :: class.java)
+            startActivity(intent)
+        }
+        val infocrimButton:Button = findViewById(R.id.infocrimButton)
+        infocrimButton.setOnClickListener{
+            val intent = Intent(this, InfocrimActivity :: class.java)
+            startActivity(intent)
+        }
+
+        val sivecButton:Button = findViewById(R.id.sivecButton)
+       sivecButton.setOnClickListener{
+            val intent = Intent(this, SivecActivity :: class.java)
+            startActivity(intent)
+        }
+
     }
 }

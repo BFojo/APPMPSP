@@ -14,7 +14,7 @@ class DetranPresenter (
 
         fun showDetran() {
             view.showLoading()
-            val call = service.getDataFromDetran()
+        val call = service.getDataFromDetran("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGE3YTQyZmEzZTU3MzI0OGRlYWQ0NTgiLCJpYXQiOjE1NzE5NjIxMDB9.-h9S6uW_Hz5VrnXUjiuwb5DEtxz1_fY-uBfM1wK3kjE")
             //val callback = endpoint.getPosts()
 
             call.enqueue(object : Callback<List<DetranResult>> {

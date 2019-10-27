@@ -19,7 +19,7 @@ class DetranAdapter:  RecyclerView.Adapter<DetranAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DetranAdapter.ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.detran_item, parent, false)
-        return DetranAdapter.ViewHolder(view)
+        return ViewHolder(view)
     }
 
     override fun getItemCount() = items.size
