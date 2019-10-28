@@ -23,7 +23,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="427dp">
 
             <TextView
                 android:id="@+id/numeroProcesso"
@@ -226,6 +226,7 @@
                 android:layout_marginEnd="24dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
             <View
                 android:id="@+id/divider7"
                 android:layout_width="0dp"
@@ -255,6 +256,7 @@
                 android:layout_marginEnd="24dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
             <View
                 android:id="@+id/divider8"
                 android:layout_width="0dp"
@@ -293,7 +295,7 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nomePaiSiv" />
+                app:layout_constraintTop_toBottomOf="@+id/nomePaiS" />
 
             <TextView
                 android:id="@+id/nomeMaeS"
@@ -323,7 +325,7 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nomeMaeSiv" />
+                app:layout_constraintTop_toBottomOf="@+id/nomeMaeS" />
 
             <TextView
                 android:id="@+id/naturalidade"
@@ -370,10 +372,10 @@
                 android:id="@+id/codValidacaoItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="24dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divider11" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/codValidacao" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

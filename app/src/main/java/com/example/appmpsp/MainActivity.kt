@@ -15,12 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val fab: FloatingActionButton = findViewById(R.id.fab)
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Inicio tela chatbot", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
-
         val arpenspButton:Button = findViewById(R.id.arpenspButton)
         arpenspButton.setOnClickListener{
             val intent = Intent(this, ArpenspActivity :: class.java)
@@ -57,6 +51,12 @@ class MainActivity : AppCompatActivity() {
         val sivecButton:Button = findViewById(R.id.sivecButton)
        sivecButton.setOnClickListener{
             val intent = Intent(this, SivecActivity :: class.java)
+            startActivity(intent)
+        }
+
+        val censecButton:Button = findViewById(R.id.censecButton)
+        censecButton.setOnClickListener{
+            val intent = Intent(this, CensecActivity :: class.java)
             startActivity(intent)
         }
 

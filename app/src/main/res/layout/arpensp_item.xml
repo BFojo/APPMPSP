@@ -107,15 +107,15 @@
         app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
 
-    <View
-        android:id="@+id/divider3"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="5dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uf" />
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/uf" />
 
 
     <TextView
@@ -129,16 +129,16 @@
         app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
 
-    <TextView
-        android:id="@+id/nomeConjugeItem1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+            <TextView
+                android:id="@+id/nomeConjugeItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
-    <View
+            <View
         android:id="@+id/divider4"
         android:layout_width="0dp"
         android:layout_height="2dp"
@@ -188,27 +188,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider5" />
 
-    <TextView
-        android:id="@+id/novoNomeConjugeItem1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider5" />
+            <TextView
+                android:id="@+id/novoNomeConjugeItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/novoNomeConjuge1" />
 
 
-    <View
-        android:id="@+id/divider6"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="5dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/novoNomeConjuge1" />
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="52dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/novoNomeConjuge1" />
 
-    <TextView
+            <TextView
         android:id="@+id/novoNomeConjuge2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -218,28 +219,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider6" />
 
-    <TextView
-        android:id="@+id/novoNomeConjugeItem2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider6" />
 
+            <TextView
+                android:id="@+id/novoNomeConjugeItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/novoNomeConjuge2" />
 
-    <View
-        android:id="@+id/divider7"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="5dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/novoNomeConjugeItem2" />
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="24dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/novoNomeConjugeItem2" />
 
-
-    <TextView
+            <TextView
         android:id="@+id/dtCasamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

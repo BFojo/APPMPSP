@@ -95,14 +95,16 @@
         app:layout_constraintTop_toBottomOf="@+id/arpenspButton" />
 
     <Button
-    android:id="@+id/infocrimButton"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="2dp"
-    android:layout_marginTop="60dp"
-    android:text="INFOCRIM"
-    app:layout_constraintStart_toEndOf="@+id/sielButton"
-    app:layout_constraintTop_toBottomOf="@+id/cadespButton" />
+        android:id="@+id/infocrimButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="2dp"
+        android:text="INFOCRIM"
+        app:layout_constraintEnd_toStartOf="@+id/sivecButton"
+        app:layout_constraintStart_toEndOf="@+id/sielButton"
+        app:layout_constraintTop_toBottomOf="@+id/cadespButton" />
 
     <Button
         android:id="@+id/sivecButton"
@@ -110,20 +112,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="2dp"
         android:text="SIVEC"
+        app:layout_constraintEnd_toStartOf="@+id/censecButton"
         app:layout_constraintStart_toEndOf="@+id/infocrimButton"
         app:layout_constraintTop_toBottomOf="@+id/jucespButton" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <Button
+        android:id="@+id/censecButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_search" />
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:text="censec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sivecButton"
+        app:layout_constraintTop_toBottomOf="@+id/detranButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

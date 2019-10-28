@@ -587,14 +587,15 @@ android:layout_height="wrap_content">
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/divider18" />
 
+
                 <TextView
                     android:id="@+id/residencialItem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginEnd="24dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/divider18" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/residencial" />
 
                 <View
                     android:id="@+id/divider19"
@@ -603,9 +604,9 @@ android:layout_height="wrap_content">
                     android:layout_marginTop="5dp"
                     android:background="?android:attr/listDivider"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/residencial" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/residencialItem" />
 
                 <TextView
                     android:id="@+id/trabalho"
@@ -767,8 +768,8 @@ android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/outrosNomePaiItem"
-                    android:layout_width="6dp"
-                    android:layout_height="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="5dp"
                     app:layout_constraintStart_toStartOf="parent"

@@ -26,6 +26,8 @@
         <activity android:name=".view.InfocrimView" />
         <activity android:name=".view.SivecActivity" />
         <activity android:name=".view.SivecView" />
+        <activity android:name=".view.CensecActivity" />
+        <activity android:name=".view.CensecView" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginPage">
             <intent-filter>
