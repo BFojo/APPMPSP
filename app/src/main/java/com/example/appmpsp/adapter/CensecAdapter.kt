@@ -7,9 +7,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appmpsp.R
 import com.example.appmpsp.model.CensecResult
+import com.example.appmpsp.model.SociosResult
 
 
-class CensecAdapter : RecyclerView.Adapter<CensecAdapter.ViewHolder>() {
+class CensecAdapter() : RecyclerView.Adapter<CensecAdapter.ViewHolder>() {
 
     private var items = listOf<CensecResult>()
 
@@ -28,9 +29,9 @@ class CensecAdapter : RecyclerView.Adapter<CensecAdapter.ViewHolder>() {
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.nomeCen.text = items[position].socios
-        holder.cpfCnpj.text = items[position].socios
-        holder.qualidade.text = items[position].socios
+        holder.nomeCen.text = items[position].socios[0].nomeCen
+        holder.cpfCnpj.text = items[position].socios[0].cpfCnpj
+        holder.qualidade.text = items[position].socios[0].qualidade
         holder.codigo.text = items[position].codigo
         holder.mes.text = items[position].mes
         holder.ano.text = items[position].ano

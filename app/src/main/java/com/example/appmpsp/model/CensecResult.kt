@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 class CensecResult (
     @SerializedName("socios")
-    val socios: String,
+    val socios: List<SociosResult>,
     @SerializedName("codigo")
     val codigo: String,
     @SerializedName("mes")
@@ -21,12 +21,4 @@ class CensecResult (
     val ufCartorio: String,
     @SerializedName("municipioCartorio")
     val municipioCartorio: String
-)
-class Socios(
-    @SerializedName("nome")
-    val nomeCen: String,
-    @SerializedName("cpfCnpj")
-    val cpfCnpj: String,
-    @SerializedName("qualidade")
-    val qualidade: String
 )

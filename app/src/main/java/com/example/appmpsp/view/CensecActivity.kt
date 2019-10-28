@@ -1,5 +1,6 @@
 package com.example.appmpsp.view
 
+import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
@@ -14,13 +15,13 @@ import kotlinx.android.synthetic.main.censec_recycler.*
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class CensecActivity: AppCompatActivity(), CensecView {
+class CensecActivity(): AppCompatActivity(), CensecView {
 
     val censecAdapter = CensecAdapter()
 
     val presenter by lazy {
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://192.168.0.16:8080/")
+            .baseUrl("http://192.168.43.51:8080/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
